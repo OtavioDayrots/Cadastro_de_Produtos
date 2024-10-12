@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Produtos</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Cadastre um Produto</h1>
+    <main>
+        <h2>Formulário</h2>
+        <P>Descreva as caracteristicas do produto</P>
+      <form>
+        <div class="box-input">
+          <label for="name">Nome <span class="required-field">*</span></label>
+          <input
+            type="text"
+            class="block"
+            name="name"
+            placeholder="Digite o nome do produto"
+            minlength="1"
+            maxlength="30"
+            required
+          />
+        </div>
+        <div class="box-input">
+          <label for="preco">Preço <span class="required-field">*</span></label>
+          <input
+            type="number"
+            class="block"
+            name="preco"
+            placeholder="Digite o preço do produto"
+            minlength="1"
+            maxlength="30"
+            required
+          />
+        </div>
+        <div class="box-input">
+          <label for="description"
+            >Descrição <span class="required-field">*</span></label
+          >
+          <textarea
+            name="description"
+            id="description"
+            class="block"
+            placeholder="Escreva detalhes do produto."
+          ></textarea>
+        </div>
+        <div class="box-input">
+          <label for="name"
+            >Quantidade <span class="required-field">*</span></label
+          >
+          <input
+            type="number"
+            class="block"
+            name="name"
+            placeholder="Digite a quantidade em estoque"
+            minlength="1"
+            maxlength="30"
+            required
+          />
+        </div>
+        <div class="box-input">
+          <input type="submit" value="Enviar" class="btn-submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
